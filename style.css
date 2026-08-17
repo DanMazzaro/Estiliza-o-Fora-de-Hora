@@ -24,6 +24,13 @@ nav a {
   text-decoration: none;
 }
 
+section {
+  background: #dde7a5;
+  border: 1px solid #665;
+  margin: 20px;
+  padding: 15px;
+}
+
 /* GRID DA PÁGINA INICIAL */
 
 .grid {
@@ -40,15 +47,6 @@ nav a {
   gap: 10px;
 }
 
-/* SECTIONS */
-
-section {
-  background: #dde7a5;
-  border: 1px solid #665;
-  margin: 20px;
-  padding: 15px;
-}
-
 /* TABELAS */
 
 table {
@@ -63,7 +61,7 @@ td {
   padding: 8px;
 }
 
-/* FORMULÁRIO COM GRID */
+/* FORMULÁRIO */
 
 .form-grid {
   display: grid;
@@ -81,7 +79,11 @@ textarea {
 textarea {
   height: 100px;
 }
+
+/* RESPONSIVIDADE */
+
 @media (max-width: 768px) {
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -94,11 +96,25 @@ textarea {
     margin: 10px;
   }
 
-  table {
-    font-size: 14px;
+  nav a {
+    display: block;
+    margin: 10px;
   }
 
   .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
